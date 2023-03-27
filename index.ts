@@ -140,13 +140,6 @@ app.post("/webhook", async (req, res) => {
 
   response = await sendReply(message.from, "Something went wrong");
 
-  // {
-  //   from: '16315551181',
-  //   id: 'ABGGFlA5Fpa',
-  //   timestamp: '1504902988',
-  //   type: 'text',
-  //   text: { body: 'this is a text message' }
-  // }
   return res.sendStatus(500);
 });
 
